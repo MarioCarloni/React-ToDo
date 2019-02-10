@@ -1,12 +1,6 @@
 class Store {
   
-  todoList = [
-    {
-      id: '1',
-      todo: "Example todo", 
-      done: false
-    },
-  ];
+  todoList = [];
 
   toggleDone(id) {
 

@@ -3,8 +3,8 @@ import './App.css';
 import Store from '../Store/Store';
 import {decorate, observable, action, computed} from 'mobx';
 import {Container, Row} from 'react-bootstrap'
-import Home from '../Home/Home'
-import Header from '../Header/Header'
+import Home from '../Components/Home/Home'
+import Header from '../Components/Header/Header'
 
 decorate(Store, {
   todoList: observable,
