@@ -14,16 +14,16 @@ class Home extends Component {
       <Col>
         <ListGroup>
           {this.props.store.todoList.map((e) => 
-              <ListGroupItem key = {e.id} className = {e.done ? 'complete' : null}>
-                {e.todo}
-                <input 
-                  onChange = {this.toggleDone.bind(this, e.id)} 
-                  defaultChecked = {e.done} 
-                  type = 'checkbox'
-                  className = 'center'
-                >
-                </input>
-              </ListGroupItem>
+            <ListGroupItem key = {e.id} className = {e.done ? 'complete' : null}>
+              {e.todo}
+              <input 
+                onChange = {this.toggleDone.bind(this, e.id)} 
+                defaultChecked = {e.done} 
+                type = 'checkbox'
+                className = 'center'
+              >
+              </input>
+            </ListGroupItem>
           )}
         </ListGroup>
       </Col>

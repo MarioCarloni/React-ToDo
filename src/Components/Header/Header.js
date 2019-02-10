@@ -11,7 +11,6 @@ class Header extends Component {
   }
 
   toggleInput() {
-
     this.setState(prevState => ({
       inputToggle: !prevState.inputToggle
     }))
@@ -22,20 +21,16 @@ class Header extends Component {
   }
 
   addTodo(e) {
-
     const uniqueId = Math.floor(Math.random() * 1000) + 1
-
     this.props.store.addTodo({
       id: uniqueId,
       todo: this.state.inputText,
       done: false
     })
-
     e.preventDefault()
   }
 
   handleTextInput(e) {
-
     this.setState({
       inputText: e.target.value
     })
@@ -43,13 +38,13 @@ class Header extends Component {
 
   render() {
 
-    let todoInput = (
-      this.state.inputToggle ? 
-        <form onSubmit = {this.addTodo.bind(this)}>
-          <input value = {this.state.inputText} onChange = {this.handleTextInput.bind(this)} type = 'text'></input>
-        </form> : 
-        null
+    let inputForm = (
+      <form onSubmit = {this.addTodo.bind(this)}>
+        <input value = {this.state.inputText} onChange = {this.handleTextInput.bind(this)} type = 'text'></input>
+      </form>
     )
+
+    let todoInput = ( this.state.inputToggle ? inputForm : null )
 
     return (
       <Col>
