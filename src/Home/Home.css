@@ -1,0 +1,9 @@
+.complete {
+  text-decoration: line-through
+}
+
+.center {
+  display: inline;
+  margin-left: 10px
+}
+
