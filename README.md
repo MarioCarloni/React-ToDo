@@ -1,10 +1,11 @@
 # React-ToDo
-> ToDo app displaying various ReactJS concepts
+> ToDo app displaying various ReactJS concepts (State, Props, Lifecycle Hooks, Rendering)
 
 ## Dependencies
 * [NodeJS](https://nodejs.org/en/)
 * [ReactJS](https://reactjs.org/)
 * [Mobx](https://github.com/mobxjs/mobx)
+* [React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## Getting Started
 ```bash
